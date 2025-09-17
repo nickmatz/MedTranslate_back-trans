@@ -1,0 +1,26 @@
+name: medtranslate-back-trans
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # --- Core Python and CUDA ---
+  - python=3.9
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1 # IMPORTANT: Match this to your cluster's CUDA version
+
+  # --- Core Scientific Libraries (best installed with Conda) ---
+  - numpy
+  - pandas
+  - tqdm
+  - sentencepiece # Important dependency for transformers/sacrebleu
+
+  # --- Python packages (best installed with Pip) ---
+  - pip:
+    - transformers
+    - datasets
+    - sacrebleu
+    - safetensors
