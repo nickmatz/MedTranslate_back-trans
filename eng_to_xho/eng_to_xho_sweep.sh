@@ -22,9 +22,9 @@ if [ ! -f "$STATE_FILE" ]; then
 fi
 
 # --- HYPERPARAMETER GRID ---
-LEARNING_RATES=( "1e-6" "1e-5" "2e-5" "3e-5" "5e-5" "1e-4")
+LEARNING_RATES=( "5e-6" "1e-5" "3e-5" "5e-5" "5e-4" "5e-3")
 EFFECTIVE_BATCH_SIZES=( 32 64 )
-NUM_EPOCHS=( 3 5 )
+NUM_EPOCHS=( 3 5 7)
 WARMUP_RATIOS=( "0.0" "0.1" )
 WEIGHT_DECAYS=( "0.0" "0.01" )
 LABEL_SMOOTHINGS=( "0.0" "0.1" )
